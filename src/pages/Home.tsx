@@ -45,7 +45,7 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="hero"
-        className="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-20 py-12 md:py-20 gap-10 lg:gap-16"
+        className="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-20  py-12 md:py-20 gap-10 lg:gap-16"
       >
         {/* Colonne gauche */}
         <motion.div

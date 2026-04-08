@@ -11,7 +11,7 @@ export default function Layout({ children }: LayoutProps) {
       <Header />
 
       {/* --- Contenu principal --- */}
-      <main className="flex flex-1 items-center justify-center px-6 sm:px-5 lg:px-2 py-10 sm:py-16">
+      <main className="flex flex-1 items-center justify-center px-6 sm:px-5 lg:px-2  py-10 sm:py-16">
         {children}
       </main>
 

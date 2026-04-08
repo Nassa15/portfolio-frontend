@@ -49,7 +49,7 @@ export default function Header() {
           to="/"
           className="text-lg sm:text-xl font-mono font-semibold text-white tracking-wide cursor-pointer select-none hover:text-indigo-400 transition"
         >
-          gustiawan<span className="text-indigo-400">-dev</span>
+          Nassa<span className="text-indigo-400">-dev</span>
         </Link>
 
         {/* Menu Desktop */}
