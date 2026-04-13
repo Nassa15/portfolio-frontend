@@ -152,7 +152,7 @@ export default function Home() {
 
       {/* Séparateur animé */}
       <motion.div
-        className="w-full h-1 my-12 bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-600 rounded"
+        className="w-full h-1 my-6 sm:my-12 bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-600 rounded"
         initial={{ width: 0 }}
         whileInView={{ width: "100%", transition: { duration: 1 } }}
       />
@@ -163,7 +163,7 @@ export default function Home() {
       </section>
 
       <motion.div
-        className="w-full h-1 my-12 bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-600 rounded"
+        className="w-full h-1 my-6 sm:my-12 bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-600 rounded"
         initial={{ width: 0 }}
         whileInView={{ width: "100%", transition: { duration: 1 } }}
       />
@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       <motion.div
-        className="w-full h-1 my-12 bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-600 rounded"
+        className="w-full h-1 my-6 sm:my-12 bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-600 rounded"
         initial={{ width: 0 }}
         whileInView={{ width: "100%", transition: { duration: 1 } }}
       />

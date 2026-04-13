@@ -96,7 +96,7 @@ const ProjectsCarousel: React.FC = () => {
   return (
     <section
       id="projects"
-      className="min-h-screen bg-gradient-to-b from-[#0f0f1a] via-[#111827] to-black text-white py-16 px-6 md:px-20"
+      className="min-h-screen bg-gradient-to-b from-[#0f0f1a] via-[#111827] to-black text-white py-8 sm:py-16 px-6 md:px-20"
     >
       <motion.h2
         variants={fadeUp}

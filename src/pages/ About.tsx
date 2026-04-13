@@ -7,7 +7,7 @@ const fadeInUp = {
 
 export default function About() {
   return (
-    <section className="flex flex-col lg:flex-row justify-between items-start w-full max-w-7xl mx-auto mt-20  mb-16 px-4 sm:px-6 gap-8 sm:gap-10 md:gap-16">
+    <section className="flex flex-col lg:flex-row justify-between items-start w-full max-w-7xl mx-auto mt-10 sm:mt-20  mb-8 sm:mb-16 px-4 sm:px-6 gap-8 sm:gap-10 md:gap-16">
       
       {/* Texte + Skills */}
       <motion.div
