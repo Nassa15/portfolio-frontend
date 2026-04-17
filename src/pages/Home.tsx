@@ -23,7 +23,7 @@ export default function Home() {
     show: { opacity: 1, y: 0 },
   };
 
-  const randomFloatAnim = (xRange: number, yRange: number, duration: number) => ({
+  const randomFloatAnim = (xRange: number, yRange: number) => ({
     x: [0, xRange, -xRange / 2, 0],
     y: [0, -yRange, yRange / 2, 0],
   });
@@ -132,7 +132,7 @@ export default function Home() {
             <motion.div
               key={idx}
               className={`absolute ${color}`}
-              animate={randomFloatAnim(x, y, duration)}
+              animate={randomFloatAnim(x, y)}
               transition={{
                 duration,
                 ease: "easeInOut",
