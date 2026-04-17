@@ -16,11 +16,17 @@ export default function Contact() {
     setIsLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      // const res = await fetch("http://localhost:5000/api/contact", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/json" },
+      //   body: JSON.stringify(formData),
+      // });
+      const res = await fetch("https://portfolio-frontend-cc0b.onrender.com/api", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
+      
 
       const data = await res.json();
       if (res.ok) {
