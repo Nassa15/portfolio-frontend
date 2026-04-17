@@ -20,18 +20,12 @@ import Contact from "./Contact";
 export default function Home() {
   const fadeIn = {
     hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] } },
+    show: { opacity: 1, y: 0 },
   };
 
   const randomFloatAnim = (xRange: number, yRange: number, duration: number) => ({
     x: [0, xRange, -xRange / 2, 0],
     y: [0, -yRange, yRange / 2, 0],
-    transition: {
-      duration,
-      ease: [0.42, 0, 0.58, 1],
-      repeat: Infinity,
-      repeatType: "mirror" as const,
-    },
   });
 
   return (
@@ -47,6 +41,7 @@ export default function Home() {
           variants={fadeIn}
           initial="hidden"
           whileInView="show"
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
           className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-xl w-full space-y-4 sm:space-y-6"
         >
@@ -110,6 +105,7 @@ export default function Home() {
           variants={fadeIn}
           initial="hidden"
           whileInView="show"
+          transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
           className="relative flex items-center justify-center w-full max-w-[320px] sm:max-w-[380px] md:max-w-[420px] h-[320px] sm:h-[360px]"
         >
@@ -137,6 +133,12 @@ export default function Home() {
               key={idx}
               className={`absolute ${color}`}
               animate={randomFloatAnim(x, y, duration)}
+              transition={{
+                duration,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "mirror" as const,
+              }}
               style={{ top, bottom, left, right }}
             >
               {icon}

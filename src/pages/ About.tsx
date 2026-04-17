@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] } },
+  show: { opacity: 1, y: 0 },
 };
 
 export default function About() {
@@ -14,6 +14,7 @@ export default function About() {
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
         className="flex-1"
       >
@@ -59,6 +60,7 @@ export default function About() {
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
         className="flex-1 flex justify-center lg:justify-end mt-8 lg:mt-0"
       >

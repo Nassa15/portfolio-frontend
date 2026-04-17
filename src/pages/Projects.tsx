@@ -61,7 +61,7 @@ const projects: Project[] = [
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] } },
+  show: { opacity: 1, y: 0 },
 };
 
 const CARDS_PER_VIEW = 3;
@@ -102,6 +102,7 @@ const ProjectsCarousel: React.FC = () => {
         variants={fadeUp}
         initial="hidden"
         whileInView="show"
+        transition={{ duration: 0.7, ease: "easeOut" }}
         viewport={{ once: true }}
         className="text-4xl sm:text-5xl font-extrabold text-center drop-shadow-[0_0_10px_rgba(99,102,241,0.5)]"
       >
@@ -157,8 +158,8 @@ const ProjectsCarousel: React.FC = () => {
                 variants={fadeUp}
                 initial="hidden"
                 whileInView="show"
+                transition={{ duration: 0.7, ease: "easeOut", delay: index * 0.2 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
                 whileHover={{ scale: 1.03, boxShadow: "0 0 20px rgba(99,102,241,0.7)" }}
                 className="bg-[#1a1a2e]/80 backdrop-blur-sm rounded-xl shadow-xl transition-transform duration-300 flex flex-col overflow-hidden"
               >
