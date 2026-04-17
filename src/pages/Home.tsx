@@ -20,12 +20,7 @@ import Contact from "./Contact";
 export default function Home() {
   const fadeIn = {
     hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-  };
-
-  const separatorAnim = {
-    hidden: { width: 0, opacity: 0 },
-    show: { width: "100%", opacity: 1, transition: { duration: 1 } },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] } },
   };
 
   const randomFloatAnim = (xRange: number, yRange: number, duration: number) => ({
@@ -33,9 +28,9 @@ export default function Home() {
     y: [0, -yRange, yRange / 2, 0],
     transition: {
       duration,
-      ease: "easeInOut",
+      ease: [0.42, 0, 0.58, 1],
       repeat: Infinity,
-      repeatType: "mirror",
+      repeatType: "mirror" as const,
     },
   });
 
