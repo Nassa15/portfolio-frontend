@@ -61,25 +61,25 @@ export default function Home() {
           </p>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight sm:leading-snug drop-shadow-[0_0_10px_rgba(99,102,241,0.4)]">
-            Développeur Web Créatif
+            Développeur Web Full-Stack
           </h1>
 
           <p className="text-gray-400 text-base sm:text-lg leading-relaxed">
-            Je crée des interfaces <span className="text-white font-medium">modernes</span>,{" "}
-            <span className="text-white font-medium">réactives</span> et{" "}
-            <span className="text-white font-medium">centrées sur l’utilisateur</span>.
+            Je conçois des applications web <span className="text-white font-medium">performantes</span>,{" "}
+            <span className="text-white font-medium">scalables</span> et{" "}
+            <span className="text-white font-medium">orientées utilisateur</span>.
           </p>
 
           <p className="text-gray-400 text-sm sm:text-base max-w-md">
-            Transformons vos idées en projets web percutants — combinant{" "}
-            <span className="text-indigo-300 font-medium">design</span>,{" "}
-            <span className="text-indigo-300 font-medium">code propre</span> et{" "}
-            <span className="text-indigo-300 font-medium">innovation</span>.
+            Je transforme des visions en solutions web robustes — combinant{" "}
+            <span className="text-indigo-300 font-medium">architecture solide</span>,{" "}
+            <span className="text-indigo-300 font-medium">code de qualité</span> et{" "}
+            <span className="text-indigo-300 font-medium">innovation technologique</span>.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 mt-2">
             <button className="bg-gradient-to-r from-indigo-600 to-blue-500 text-white px-8 sm:px-10 py-3 rounded-md font-semibold shadow-[0_0_20px_rgba(99,102,241,0.6)] hover:shadow-[0_0_35px_rgba(99,102,241,0.8)] hover:scale-105 transition duration-300">
-              Télécharger mon CV
+              Télécharger mon Curriculum Vitae
             </button>
             <a
               href="#contact"

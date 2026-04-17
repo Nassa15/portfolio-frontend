@@ -17,7 +17,7 @@ export default function Layout({ children }: LayoutProps) {
 
       {/* --- Pied de page simple --- */}
       <footer className="text-gray-500 text-xs text-center py-4 border-t border-gray-800">
-        © {new Date().getFullYear()} <span className="text-white font-semibold">Gustiawan</span>. All rights reserved.
+        © {new Date().getFullYear()} <span className="text-white font-semibold">Nassa ANDRIATSILAVO</span>. Tous droits réservés.
       </footer>
     </div>
   );

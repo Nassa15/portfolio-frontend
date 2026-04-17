@@ -25,21 +25,19 @@ export default function About() {
         <div className="w-20 xs:w-24 h-1 bg-gradient-to-r from-indigo-400 via-blue-500 to-purple-500 rounded mb-6 xs:mb-8 hidden md:block"></div>
 
         <p className="mb-4 text-gray-300 text-sm xs:text-base sm:text-lg leading-relaxed">
-          Je suis un développeur web passionné, dédié à créer des expériences digitales engageantes et fonctionnelles.
-          Avec une expertise en <span className="text-indigo-300 font-medium">HTML5</span>, <span className="text-indigo-300 font-medium">CSS3</span>, <span className="text-indigo-300 font-medium">JavaScript</span>, <span className="text-indigo-300 font-medium">React</span> et <span className="text-indigo-300 font-medium">Node.js</span>, je fournis des solutions numériques de haute qualité.
+          Développeur Full-Stack passionné par la création de solutions web sophistiquées. Fort d'une expertise en <span className="text-indigo-300 font-medium">HTML5</span>, <span className="text-indigo-300 font-medium">CSS3</span>, <span className="text-indigo-300 font-medium">JavaScript</span>, <span className="text-indigo-300 font-medium">React</span> et <span className="text-indigo-300 font-medium">Node.js</span>, je développe des applications performantes et maintenables.
         </p>
 
         <p className="mb-6 text-gray-300 text-sm xs:text-base sm:text-lg leading-relaxed">
-          Je crois que la technologie doit être accessible et apporter une réelle valeur aux utilisateurs.
-          Chaque projet est une opportunité d’apprendre, de grandir et de contribuer positivement à la communauté des développeurs.
+          Philosophie : la technologie doit être accessible, performante et créer une valeur réelle. Chaque projet est l'occasion de repousser les limites techniques, d'adopter les meilleures pratiques et de contribuer positivement à l'écosystème du développement.
         </p>
 
         {/* Skills */}
         <div className="mt-6">
-          <h3 className="font-bold text-white mb-3 text-lg xs:text-xl">Compétences & Technologies</h3>
+          <h3 className="font-bold text-white mb-3 text-lg xs:text-xl">Compétences Professionnelles</h3>
           <div className="flex flex-wrap gap-2 xs:gap-3">
             {[
-              "HTML5","CSS3","JavaScript","React","Node.js","Git","Responsive Design","UI/UX"
+              "HTML5","CSS3","JavaScript","React","Node.js","Git","Design Responsive","Architecture Web"
             ].map(skill => (
               <motion.span
                 key={skill}
@@ -68,9 +66,9 @@ export default function About() {
           <pre className="text-indigo-400 text-sm xs:text-base md:text-lg font-mono leading-relaxed">
 {`const developer = {
   name: 'Nassa ANDRIATSILAVO',
-  role: 'Développeur Web',
-  passion: 'Créer des expériences web
-                 engageantes'
+  role: 'Développeur Full-Stack',
+  expertise: 'Solutions web scalables
+              et performantes'
 };`}
           </pre>
         </div>

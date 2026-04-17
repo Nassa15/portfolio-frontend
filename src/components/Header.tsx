@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  { name: "Home", path: "#hero" },
-  { name: "About", path: "#about" },
-  { name: "Projects", path: "#projects" },
+  { name: "Accueil", path: "#hero" },
+  { name: "À propos", path: "#about" },
+  { name: "Projets", path: "#projects" },
   { name: "Contact", path: "#contact" },
 ];
 

@@ -15,9 +15,9 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Plateforme E-Commerce",
     description:
-      "Une plateforme e-commerce complète avec panier, paiement et tableau de bord admin.",
+      "Solution e-commerce performante avec gestion d'inventaire, système de paiement sécurisé et tableau de bord administrateur. Optimisée pour la scalabilité et l'expérience utilisateur.",
     imageUrl:
       "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
     tags: ["React", "Node.js", "MongoDB"],
@@ -26,9 +26,9 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Portfolio Website",
+    title: "Portfolio Personnel",
     description:
-      "Un site portfolio interactif avec animations modernes et design responsive.",
+      "Site portfolio professionnel avec des animations fluides, un design responsive et une navigation intuitive. Construit pour présenter efficacement les compétences et les projets.",
     imageUrl:
       "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80",
     tags: ["Next.js", "Tailwind", "Framer Motion"],
@@ -37,9 +37,9 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Task Management App",
+    title: "Gestionnaire de Tâches Collaboratif",
     description:
-      "Application de gestion des tâches avec drag-and-drop et collaboration en temps réel.",
+      "Application de gestion de projet avec interface drag-and-drop, collaboration en temps réel et synchronisation instantanée. Idéale pour les équipes distribuées.",
     imageUrl:
       "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80",
     tags: ["Vue.js", "Firebase", "Tailwind"],
@@ -48,9 +48,9 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Dashboard Analytics",
+    title: "Tableau de Bord Analytique",
     description:
-      "Dashboard interactif pour visualiser les données en temps réel avec graphiques personnalisés.",
+      "Plateforme d'analyse avancée avec visualisation de données en temps réel, graphiques personnalisables et génération de rapports. Interface ergonomique pour l'aide à la décision.",
     imageUrl:
       "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
     tags: ["React", "ChartJS", "Express"],
@@ -118,7 +118,7 @@ const ProjectsCarousel: React.FC = () => {
       <div className="max-w-xl mx-auto mb-12">
         <input
           type="search"
-          placeholder="Rechercher un projet (titre, techno...)"
+          placeholder="Rechercher un projet (titre, technologie...)"
           aria-label="Recherche de projet"
           className="w-full px-4 py-3 rounded bg-[#22244c] border border-indigo-600 text-indigo-200 placeholder-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
           value={searchTerm}
@@ -193,7 +193,7 @@ const ProjectsCarousel: React.FC = () => {
                         className="flex-1 text-center border border-indigo-500 text-indigo-300 hover:bg-indigo-600 hover:text-white rounded px-4 py-2 transition flex items-center justify-center gap-2"
                         whileHover={{ scale: 1.1 }}
                       >
-                        <FaExternalLinkAlt /> Live Demo
+                        <FaExternalLinkAlt /> Démo en direct
                       </motion.a>
                     )}
                     {project.githubUrl && (
@@ -204,7 +204,7 @@ const ProjectsCarousel: React.FC = () => {
                         className="flex-1 text-center border border-indigo-500 text-indigo-300 hover:bg-indigo-600 hover:text-white rounded px-4 py-2 transition flex items-center justify-center gap-2"
                         whileHover={{ scale: 1.1 }}
                       >
-                        <FaGithub /> GitHub
+                        <FaGithub /> Code source
                       </motion.a>
                     )}
                   </div>
