@@ -43,7 +43,7 @@ export default function Contact() {
     <section className="contact-section">
       <div className="contact-container">
         <div className="contact-left">
-          <h2>Collaborons Ensemblea</h2>
+          <h2>Collaborons Ensemble</h2>
           <div className="separator"></div>
           <p>
             Vous avez un projet, une question technique ou souhaitez discuter d'une opportunité de collaboration ? 
