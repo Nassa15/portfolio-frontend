@@ -10,23 +10,19 @@ export default function Contact() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus(null);
     setIsLoading(true);
 
     try {
-      // const res = await fetch("http://localhost:5000/api/contact", {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(formData),
-      // });
-      const res = await fetch("https://portfolio-frontend-cc0b.onrender.com/api", {
+      const res = await fetch(`${API_URL}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
-      
 
       const data = await res.json();
       if (res.ok) {
